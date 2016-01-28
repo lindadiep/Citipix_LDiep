@@ -1,36 +1,38 @@
+
 // user enters city into input
-// user clicks button
-// background changes
-
-/* 
-
-$(document).ready(function(){ 
-
-	var n = $("#example div").length;
-
-	if (n < 2) {
-		$("body").css("background", "green");
-	} 
-	else {
-		$("body").css("background", "orange");
-	}
-});
-
-*/
-
-
 var city = $('#city-type').val();
-	// console.log(city);
+	//console.log(city);
 
-$('#submit-btn').submit(changeBackground);
+$(document).ready(function() {
 
-	function changeBackground(event) {
+	// user clicks button
+	$('#submit-btn').click(function(){
 		event.preventDefault();
 
-		if (city === 'new york') {
-			$('body').css('background', 'url(/images/nyc.jpg)');
-			// also tried .css('background-image', 'url(/images/nyc.jpg)');
+		// background changes
 
-		}
+		if (city == 'NYC' || city == 'New York City' || city == 'New York') {
+			$('body').attr('class','nyc');
+    	} 
 
-	}
+    	else if (city == 'SF' || city == 'San Francisco' || city == 'Bay Area') {
+    		$('body').attr('class','sf');	
+    	}
+
+    	else if (city == 'LA' || city == 'Los Angeles' || city == 'LAX') {
+    		$('body').attr('class','la');	
+    	}
+
+    	else if (city == 'ATX' || city == 'Austin') {
+    		$('body').attr('class','austin');	
+    	}
+
+      	else if (city == 'SYD' || city == 'Sydney') {
+    		$('body').attr('class','sydney');	
+    	}
+
+	});
+});
+
+
+	
