@@ -28,7 +28,9 @@ $('#submit-btn').submit(changeBackground);
 		event.preventDefault();
 
 		if (city === 'new york') {
-			$('body').css('background','blue');
+			$('body').css('background', 'url(/images/nyc.jpg)');
+			// also tried .css('background-image', 'url(/images/nyc.jpg)');
+
 		}
 
 	}
