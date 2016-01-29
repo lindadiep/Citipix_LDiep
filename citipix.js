@@ -1,13 +1,15 @@
 
-// user enters city into input
-var city = $('#city-type').val();
-	//console.log(city);
+
 
 $(document).ready(function() {
 
 	// user clicks button
-	$('#submit-btn').click(function(){
+	$('form').submit(function(event){
 		event.preventDefault();
+
+    // user enters city into input
+    var city = $('#city-type').val();
+    //console.log(city);
 
 		// background changes
 
