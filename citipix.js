@@ -1,4 +1,8 @@
-
+// html code
+//              <form>
+//                  <input type="text" id="city-type" placeholder="Enter a city name...">
+//                  <input type="submit" value="Update" id="submit-btn">
+//              </form>
 
 
 $(document).ready(function() {
