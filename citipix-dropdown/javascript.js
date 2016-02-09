@@ -12,29 +12,30 @@ var cities = ["NYC", "SF", "LA", "ATX", "SYD"];
 	// user selects city from scroll menu
 	var selection = $('option').val();
 	
+	// selection is submitted
 	$('#city-type').change(function() {
-
-		// selection is submitted
-		if (selection == cities[i=0]) {
-
-			// background changes
-			$('body').attr('class', 'nyc');
-			}
-
-		else if (selection == cities[i=1]) {
-			$('body').attr('class', 'sf');
-			}
-
-		else if (selection == cities[i=2]) {
-			$('body').attr('class', 'la');
-			}
-
-		else if (selection == cities[i=3]) {
-			$('body').attr('class', 'atx');
-			}
-
-		else if (selection == cities[i=4]) {
-			$('body').attr('class', 'syd');
-			}
+		// background changes, voila!
+	    $('body').css('background-image', 'url("images/austin.jpg")');
+	
 	});
 });	
+
+//		if (selection == cities[i=0]) {
+//		    $('body').css('background-image', 'url("images/nyc.jpg")');
+//			}
+
+//		else if (selection == cities[i=1]) {
+//	    	$('body').css('background-image', 'url("images/sf.jpg")');
+//			}
+
+//		else if (selection == cities[i=2]) {
+//	    	$('body').css('background-image', 'url("images/la.jpg")');
+//			}
+
+//		else if (selection == cities[i=3]) {
+//	    	$('body').css('background-image', 'url("images/austin.jpg")');
+//			}
+
+//		else if (selection == cities[i=4]) {
+//	    $('body').css('background-image', 'url("images/sydney.jpg")');
+//			}
